@@ -5,7 +5,7 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Button startIcon="👻" endIcon="👻" onClick={() => console.log('clicked')} >Click</Button>
+      <Button loading startIcon="👻" endIcon="👻" onClick={() => console.log('clicked')} >Click</Button>
     </div>
   );
 }

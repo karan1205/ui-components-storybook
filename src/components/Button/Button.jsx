@@ -42,7 +42,7 @@ const Button = forwardRef((props, ref) => {
         {
             loading 
             ?
-            'Loading'
+            'Loading...'
             :
             <>{startIcon} {children} {endIcon}</>
         }

@@ -9,6 +9,10 @@
     }
 }
 
+.no-pointer-events {
+    pointer-events: none;
+}
+
 $appearance:
 	"primary" #021aee,
 	"secondary" #81D4FA,
