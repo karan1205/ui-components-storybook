@@ -1,0 +1,48 @@
+.button {
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    outline: 0;
+    cursor: pointer;
+    :focus {
+        outline: 0;
+    }
+}
+
+$appearance:
+	"primary" #021aee,
+	"secondary" #81D4FA,
+	"success" #90ee02,
+    "warning" #ff8d00,
+    "danger" #e54304,
+    "disabled" gray;
+
+@each $i in $appearance{
+    .contained_#{nth($i, 1)} {
+        background: nth($i, 2);
+        border: 0;
+        color: #FFF;
+    }
+    .outlined_#{nth($i, 1)} {
+        background: none;
+        border: 1px solid nth($i, 2);
+        color: nth($i, 2);
+    }
+    .text_#{nth($i, 1)} {
+        color: nth($i, 2);
+        border: 0;
+        background: none;
+    }
+}
+
+.startIcon {
+    margin-right: 3px;
+}
+
+.endIcon {
+    margin-left: 3px;
+}
+
+.block {
+    width: 100%;
+}
